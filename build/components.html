@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="Project Name - описание">
+
+<!-- генерируйте favicon тут - https://realfavicongenerator.net/ -->
+<!-- ! в подключение фавикон манифеста обязательно добавьте строчки crossorigin="use-credentials"-->
+
+<!-- <link href="favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+<link href="favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="favicon/site.webmanifest" rel="manifest" crossorigin="use-credentials">
+<link color="#c84659" href="favicon/safari-pinned-tab.svg" rel="mask-icon">
+<link href="favicon/favicon.ico" rel="shortcut icon">
+<meta content="#ffffff" name="msapplication-TileColor">
+<meta content="favicon/browserconfig.xml" name="msapplication-config">
+<meta content="#ffffff" name="theme-color">
+ -->
+
+<!-- используйте только для шрифта находящегося на первом экране -->
+
+<!-- <link rel="preload" href="fonts/placeholder.woff2" as="font" crossorigin="anonymous"> -->
+
+<link rel="stylesheet" href="css/style.min.css">
+
+  <title>Компоненты</title>
+
+  <style>
+    main > .container {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .components-backwards {
+      display: inline-block;
+      margin-bottom: 10px;
+      margin-left: 7px;
+    }
+
+    .components-backwards span:first-child {
+      position: relative;
+      top: -3px;
+
+      display: inline-block;
+      margin-right: 15px;
+
+      font-size: 16px;
+      line-height: 24px;
+      vertical-align: top;
+
+      transform: scale(2);
+    }
+
+    .components-backwards span:last-child {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .components-backwards + h1 {
+      margin-bottom: 0;
+    }
+
+    .container > section {
+      padding: 20px 0;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div style="display: none;">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-close" viewBox="0 0 20 20"><path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z"/></symbol></svg>
+  </div>
+
+  <div class="wrapper">
+    <header class="header ">
+  <div class="header__top">
+    <div class="header__top-container container">
+      <ul class="social  header__social  ">
+  <li class="social__item">
+    <a class="social__link" href="#" aria-label="мы в Facebook" target="_blank" rel="nofollow noopener noreferrer">
+      <img class="social__icon social__icon--silver"
+           src="img/content/icon-fb.png"
+           srcset="img/content/icon-fb@2x.png 2x"
+           width="8"
+           height="15"
+           alt="иконка facebook">
+      <img class="social__icon social__icon--gold"
+           src="img/content/icon-fb-gold.png"
+           srcset="img/content/icon-fb-gold@2x.png 2x"
+           width="8"
+           height="15"
+           alt="иконка facebook">
+    </a>
+  </li>
+  <li class="social__item">
+    <a class="social__link" href="#" aria-label="мы во Вконтакте" target="_blank" rel="nofollow noopener noreferrer">
+      <img class="social__icon social__icon--silver"
+           src="img/content/icon-vk.png"
+           srcset="img/content/icon-vk@2x.png 2x"
+           width="11"
+           height="13"
+           alt="иконка ВКонтакте">
+      <img class="social__icon social__icon--gold"
+           src="img/content/icon-vk-gold.png"
+           srcset="img/content/icon-vk-gold@2x.png 2x"
+           width="11"
+           height="13"
+           alt="иконка ВКонтакте">
+    </a>
+  </li>
+  <li class="social__item">
+    <a class="social__link" href="#" aria-label="мы в Twitter" target="_blank" rel="nofollow noopener noreferrer">
+      <img class="social__icon social__icon--silver"
+           src="img/content/icon-twitter.png"
+           srcset="img/content/icon-twitter@2x.png 2x"
+           width="11"
+           height="13"
+           alt="иконка twitter">
+      <img class="social__icon social__icon--gold"
+           src="img/content/icon-twitter-gold.png"
+           srcset="img/content/icon-twitter-gold@2x.png 2x"
+           width="11"
+           height="13"
+           alt="иконка twitter">
+    </a>
+  </li>
+  <li class="social__item">
+    <a class="social__link" href="#" aria-label="мы в Google+" target="_blank" rel="nofollow noopener noreferrer">
+      <img class="social__icon social__icon--silver"
+           src="img/content/icon-google.png"
+           srcset="img/content/icon-google@2x.png 2x"
+           width="14"
+           height="12"
+           alt="иконка twitter">
+      <img class="social__icon social__icon--gold"
+           src="img/content/icon-google-gold.png"
+           srcset="img/content/icon-google-gold@2x.png 2x"
+           width="14"
+           height="12"
+           alt="иконка twitter">
+    </a>
+  </li>
+</ul>
+
+
+      <a href="#" class="header__city">
+        <img src="img/decor/icon-geo.png" srcset="img/decor/icon-geo@2x.png 2x" width="11" height="16" alt="иконка геолокации">
+        <span>Москва</span>
+        <!--        <select name="city" id="city">-->
+        <!--          <option value="москва">Москва</option>-->
+        <!--          <option value="санкт-петербург">Санкт-Петербург</option>-->
+        <!--          <option value="казань">Казань</option>-->
+        <!--        </select>-->
+      </a>
+      <a href="tel:+74992401001" class="header__tel">
+        <img src="img/decor/icon-phone.png" srcset="img/decor/icon-phone@2x.png 2x" width="13" height="15" alt="иконка телефона">
+        <span>+7 (499) 240-10-01</span>
+      </a>
+      <a href="#" class="header__user">
+        <img src="img/decor/icon-user.png" srcset="img/decor/icon-user@2x.png 2x" width="14" height="16" alt="иконка пользователя">
+        <span>Войти</span>
+      </a>
+      <a href="#" class="header__cart">
+        <img src="img/decor/icon-cart.png" srcset="img/decor/icon-cart@2x.png 2x" width="17" height="15" alt="иконка корзины">
+        <span>Корзина</span>
+        <span class="header__cart-items">3</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="header__bottom">
+    <div class="header__bottom-container container">
+      <a class="header__logo"  href="main.html" aria-label="Переход на главную">
+        <img src="img/content/logo.png" srcset="img/content/logo@2x.png 2x" width="157" height="38" alt="логотип">
+      </a>
+
+      <nav class="header__main-nav main-nav">
+        <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
+          <svg width="20" height="20">
+            <use xlink:href="#icon-burger"></use>
+          </svg>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--submenu">
+              <a class="main-nav__link  "  href="#" >Пошив одежды</a>
+              <ul class="main-nav__submenu">
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Костюмы</a>
+                </li>
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Сорочки</a>
+                </li>
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Пальто</a>
+                </li>
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Обувь</a>
+                </li>
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Запонки</a>
+                </li>
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Галстуки</a>
+                </li>
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Джинсы</a>
+                </li>
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Нижнее бельё</a>
+                </li>
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Кепки</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link "  href="#" >Интернет-магазин</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link "  href="#" >О магазине</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link "  href="#" >Блог</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link "  href="#" >Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+    <main>
+      <div class="container">
+        <a class="components-backwards" href="index.html">
+          <span>&larr;</span>
+          <span>вернуться на разводящую</span>
+        </a>
+        <h1>Компоненты, используемые в вёрстке</h1>
+
+        <section>
+          <h2>Название компонента или группы компонентов</h2>
+
+          <p>Класс компонента \ модификаторы</p>
+          <p style="color: red;">При необходимости, подсказки \ предупреждение \ важная информация</p>
+          <div>Компонент</div>
+        </section>
+
+        <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
+        <!-- <section>
+          <h2></h2>
+
+          <p></p>
+        </section> -->
+      </div>
+    </main>
+
+    <footer class="footer"></footer>
+
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

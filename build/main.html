@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="Project Name - описание">
+
+<!-- генерируйте favicon тут - https://realfavicongenerator.net/ -->
+<!-- ! в подключение фавикон манифеста обязательно добавьте строчки crossorigin="use-credentials"-->
+
+<!-- <link href="favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+<link href="favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="favicon/site.webmanifest" rel="manifest" crossorigin="use-credentials">
+<link color="#c84659" href="favicon/safari-pinned-tab.svg" rel="mask-icon">
+<link href="favicon/favicon.ico" rel="shortcut icon">
+<meta content="#ffffff" name="msapplication-TileColor">
+<meta content="favicon/browserconfig.xml" name="msapplication-config">
+<meta content="#ffffff" name="theme-color">
+ -->
+
+<!-- используйте только для шрифта находящегося на первом экране -->
+
+<!-- <link rel="preload" href="fonts/placeholder.woff2" as="font" crossorigin="anonymous"> -->
+
+<link rel="stylesheet" href="css/style.min.css">
+
+  <title>ProjectName — Главная</title>
+
+</head>
+<body>
+
+  <div style="display: none;">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-close" viewBox="0 0 20 20"><path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z"/></symbol></svg>
+  </div>
+
+  <div class="wrapper">
+    <header class="header ">
+  <div class="header__top">
+    <div class="header__top-container container">
+      <ul class="social  header__social  ">
+  <li class="social__item">
+    <a class="social__link" href="#" aria-label="мы в Facebook" target="_blank" rel="nofollow noopener noreferrer">
+      <img class="social__icon social__icon--silver"
+           src="img/content/icon-fb.png"
+           srcset="img/content/icon-fb@2x.png 2x"
+           width="8"
+           height="15"
+           alt="иконка facebook">
+      <img class="social__icon social__icon--gold"
+           src="img/content/icon-fb-gold.png"
+           srcset="img/content/icon-fb-gold@2x.png 2x"
+           width="8"
+           height="15"
+           alt="иконка facebook">
+    </a>
+  </li>
+  <li class="social__item">
+    <a class="social__link" href="#" aria-label="мы во Вконтакте" target="_blank" rel="nofollow noopener noreferrer">
+      <img class="social__icon social__icon--silver"
+           src="img/content/icon-vk.png"
+           srcset="img/content/icon-vk@2x.png 2x"
+           width="11"
+           height="13"
+           alt="иконка ВКонтакте">
+      <img class="social__icon social__icon--gold"
+           src="img/content/icon-vk-gold.png"
+           srcset="img/content/icon-vk-gold@2x.png 2x"
+           width="11"
+           height="13"
+           alt="иконка ВКонтакте">
+    </a>
+  </li>
+  <li class="social__item">
+    <a class="social__link" href="#" aria-label="мы в Twitter" target="_blank" rel="nofollow noopener noreferrer">
+      <img class="social__icon social__icon--silver"
+           src="img/content/icon-twitter.png"
+           srcset="img/content/icon-twitter@2x.png 2x"
+           width="11"
+           height="13"
+           alt="иконка twitter">
+      <img class="social__icon social__icon--gold"
+           src="img/content/icon-twitter-gold.png"
+           srcset="img/content/icon-twitter-gold@2x.png 2x"
+           width="11"
+           height="13"
+           alt="иконка twitter">
+    </a>
+  </li>
+  <li class="social__item">
+    <a class="social__link" href="#" aria-label="мы в Google+" target="_blank" rel="nofollow noopener noreferrer">
+      <img class="social__icon social__icon--silver"
+           src="img/content/icon-google.png"
+           srcset="img/content/icon-google@2x.png 2x"
+           width="14"
+           height="12"
+           alt="иконка twitter">
+      <img class="social__icon social__icon--gold"
+           src="img/content/icon-google-gold.png"
+           srcset="img/content/icon-google-gold@2x.png 2x"
+           width="14"
+           height="12"
+           alt="иконка twitter">
+    </a>
+  </li>
+</ul>
+
+
+      <a href="#" class="header__city">
+        <img src="img/decor/icon-geo.png" srcset="img/decor/icon-geo@2x.png 2x" width="11" height="16" alt="иконка геолокации">
+        <span>Москва</span>
+        <!--        <select name="city" id="city">-->
+        <!--          <option value="москва">Москва</option>-->
+        <!--          <option value="санкт-петербург">Санкт-Петербург</option>-->
+        <!--          <option value="казань">Казань</option>-->
+        <!--        </select>-->
+      </a>
+      <a href="tel:+74992401001" class="header__tel">
+        <img src="img/decor/icon-phone.png" srcset="img/decor/icon-phone@2x.png 2x" width="13" height="15" alt="иконка телефона">
+        <span>+7 (499) 240-10-01</span>
+      </a>
+      <a href="#" class="header__user">
+        <img src="img/decor/icon-user.png" srcset="img/decor/icon-user@2x.png 2x" width="14" height="16" alt="иконка пользователя">
+        <span>Войти</span>
+      </a>
+      <a href="#" class="header__cart">
+        <img src="img/decor/icon-cart.png" srcset="img/decor/icon-cart@2x.png 2x" width="17" height="15" alt="иконка корзины">
+        <span>Корзина</span>
+        <span class="header__cart-items">3</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="header__bottom">
+    <div class="header__bottom-container container">
+      <a class="header__logo"  aria-label="Переход на главную">
+        <img src="img/content/logo.png" srcset="img/content/logo@2x.png 2x" width="157" height="38" alt="логотип">
+      </a>
+
+      <nav class="header__main-nav main-nav">
+        <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
+          <svg width="20" height="20">
+            <use xlink:href="#icon-burger"></use>
+          </svg>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--submenu">
+              <a class="main-nav__link  "  href="#" >Пошив одежды</a>
+              <ul class="main-nav__submenu">
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Костюмы</a>
+                </li>
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Сорочки</a>
+                </li>
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Пальто</a>
+                </li>
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Обувь</a>
+                </li>
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Запонки</a>
+                </li>
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Галстуки</a>
+                </li>
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Джинсы</a>
+                </li>
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Нижнее бельё</a>
+                </li>
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Кепки</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link "  href="#" >Интернет-магазин</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link "  href="#" >О магазине</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link "  href="#" >Блог</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link "  href="#" >Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+    <main>
+      <div class="page-intro">
+        <img class="page-intro__bg-img" src="img/bg/intro-bg.jpg" srcset="img/bg/intro-bg@2x.jpg 2x" width="1902" height="1120" alt="Размытый интерьер на заднем фоне">
+        <div class="page-intro__container container">
+          <div class="page-intro__slogan">
+            <p>Мода&nbsp;&mdash; Вопрос Денег.</p>
+            <p class="page-intro__bold">Стиль&nbsp;&mdash; Вопрос Индивидуальности.</p>
+          </div>
+          <img class="page-intro__img" src="img/content/intro-man.png" srcset="mg/content/intro-man@2x.png 2x" width="383" height="439" alt="Мужчина в коричневом костюме с красным платочком в нагрудном кармане">
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer"></footer>
+
+
+    <div class="modal modal--preload modal--feedback    ">
+  <div class="modal__wrapper">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+
+      <p class="modal__description">Обычная модалка</p>
+
+
+      <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
+        <svg width="15" height="15">
+          <use xlink:href="#icon-close"></use>
+        </svg>
+      </button>
+
+    </div>
+  </div>
+</div>
+
+
+    <div class="modal modal--preload modal--success   modal--fit-content   modal--no-scale   modal--some-mod ">
+  <div class="modal__wrapper">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+
+      <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл и передан модификатор `some-mod`</p>
+
+
+      <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
+        <svg width="15" height="15">
+          <use xlink:href="#icon-close"></use>
+        </svg>
+      </button>
+
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

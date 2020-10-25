@@ -1,10 +1,76 @@
 @font-face {
   font-style: normal;
-  font-weight: 400;
-  font-family: "";
+  font-weight: normal;
+  font-family: "Proxima Nova";
 
   font-display: swap;
   src:
-    url("../fonts/.woff2") format("woff2"),
-    url("../fonts/.woff") format("woff");
+    url("../fonts/proximanova-regular.woff2") format("woff2"),
+    url("../fonts/proximanova-regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Proxima Nova";
+
+  font-display: swap;
+  src:
+    url("../fonts/proximanova-semibold.woff2") format("woff2"),
+    url("../fonts/proximanova-semibold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: bold;
+  font-family: "Proxima Nova";
+
+  font-display: swap;
+  src:
+    url("../fonts/proximanova-bold.woff2") format("woff2"),
+    url("../fonts/proximanova-bold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 800;
+  font-family: "Proxima Nova";
+
+  font-display: swap;
+  src:
+    url("../fonts/proximanova-extrabold.woff2") format("woff2"),
+    url("../fonts/proximanova-extrabold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Proxima Nova Condenced";
+
+  font-display: swap;
+  src:
+    url("../fonts/proximanovacond-regular.woff2") format("woff2"),
+    url("../fonts/proximanovacond-regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Proxima Nova Condenced";
+
+  font-display: swap;
+  src:
+    url("../fonts/proximanovacond-light.woff2") format("woff2"),
+    url("../fonts/proximanovacond-light.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "PT Serif";
+
+  font-display: swap;
+  src:
+    url("../fonts/ptserif-regular.woff2") format("woff2"),
+    url("../fonts/ptserif-regular.woff") format("woff");
 }

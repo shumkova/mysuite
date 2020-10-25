@@ -1,28 +1,94 @@
 <header class="header @@if (context.mod) { header--@@mod }">
-  <div class="header__wrapper">
-    <a class="header__logo" @@if (!context.main) { href="main.html"} aria-label="Переход на главную">
-      Логотип
-    </a>
+  <div class="header__top">
+    <div class="header__top-container container">
+      @@include("source/html/components/social.html", {"class": "header__social"})
 
-    <nav class="main-nav">
-      <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
-        <svg width="20" height="20">
-          <use xlink:href="#icon-burger"></use>
-        </svg>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 0) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 0) { href="#" }>Страница 1</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 1) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 1) { href="#" }>Страница 2</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 2) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 2) { href="#" }>Страница 3</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      <a href="#" class="header__city">
+        <img src="img/decor/icon-geo.png" srcset="img/decor/icon-geo@2x.png 2x" width="11" height="16" alt="иконка геолокации">
+        <span>Москва</span>
+        <!--        <select name="city" id="city">-->
+        <!--          <option value="москва">Москва</option>-->
+        <!--          <option value="санкт-петербург">Санкт-Петербург</option>-->
+        <!--          <option value="казань">Казань</option>-->
+        <!--        </select>-->
+      </a>
+      <a href="tel:+74992401001" class="header__tel">
+        <img src="img/decor/icon-phone.png" srcset="img/decor/icon-phone@2x.png 2x" width="13" height="15" alt="иконка телефона">
+        <span>+7 (499) 240-10-01</span>
+      </a>
+      <a href="#" class="header__user">
+        <img src="img/decor/icon-user.png" srcset="img/decor/icon-user@2x.png 2x" width="14" height="16" alt="иконка пользователя">
+        <span>Войти</span>
+      </a>
+      <a href="#" class="header__cart">
+        <img src="img/decor/icon-cart.png" srcset="img/decor/icon-cart@2x.png 2x" width="17" height="15" alt="иконка корзины">
+        <span>Корзина</span>
+        <span class="header__cart-items">3</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="header__bottom">
+    <div class="header__bottom-container container">
+      <a class="header__logo" @@if (!context.main) { href="main.html"} aria-label="Переход на главную">
+        <img src="img/content/logo.png" srcset="img/content/logo@2x.png 2x" width="157" height="38" alt="логотип">
+      </a>
+
+      <nav class="header__main-nav main-nav">
+        <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
+          <svg width="20" height="20">
+            <use xlink:href="#icon-burger"></use>
+          </svg>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--submenu">
+              <a class="main-nav__link  @@if (context.headerActiveLinkIndex === 0) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 0) { href="#" }>Пошив одежды</a>
+              <ul class="main-nav__submenu">
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Костюмы</a>
+                </li>
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Сорочки</a>
+                </li>
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Пальто</a>
+                </li>
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Обувь</a>
+                </li>
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Запонки</a>
+                </li>
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Галстуки</a>
+                </li>
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Джинсы</a>
+                </li>
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Нижнее бельё</a>
+                </li>
+                <li class="main-nav__submenu-item">
+                  <a href="#" class="main-nav__submenu-link">Кепки</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 1) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 1) { href="#" }>Интернет-магазин</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 2) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 2) { href="#" }>О магазине</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 2) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 2) { href="#" }>Блог</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 2) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 2) { href="#" }>Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </div>
 </header>

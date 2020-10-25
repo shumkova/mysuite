@@ -1,0 +1,62 @@
+.page-intro {
+  position: relative;
+  height: 445px;
+}
+
+.page-intro__container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.page-intro__bg-img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.page-intro__slogan {
+  position: relative;
+  padding: 30px 20px 40px;
+
+  color: $color-default-white;
+  font-size: 48px;
+  line-height: 1.125;
+  text-align: center;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $color-default-white;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.page-intro__bold {
+  font-weight: 600;
+}
+
+
